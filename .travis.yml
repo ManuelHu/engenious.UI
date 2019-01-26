@@ -13,7 +13,7 @@ before_script:
   - sudo dpkg -i packages-microsoft-prod.deb
   - sudo apt-get -y -q install apt-transport-https
   - sudo apt-get -y -q update
-  - sudo apt-get -y -q install dotnet-sdk-2.2
+  - sudo apt-get -y -q -f install dotnet-sdk-2.2
 deploy:
   skip_cleanup: true
   provider: script
